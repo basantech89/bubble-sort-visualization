@@ -1,0 +1,33 @@
+.container {
+    margin-top: 100px;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective-origin: 50% 50%;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+}
+
+.num {
+    border: 2px solid #5aff1e;
+    padding: 30px;
+    background: yellow;
+    font-size: xx-large;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.animate {
+    padding: 60px;
+    background: green;
+    animation: move 3s infinite linear;
+    /*transition: trnasform 1s ease;*/
+}
