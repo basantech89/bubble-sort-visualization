@@ -39,7 +39,7 @@ const Home = () => {
 				}
 				setNums([...array]);
 				return new Promise((resolve) => {
-					setTimeout(resolve, 2000, i + 1);
+					setTimeout(resolve, 200, i + 1);
 				})
 			});
 		}
